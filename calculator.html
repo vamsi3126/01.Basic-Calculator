@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class="calculator">
+            <div class="h2"><h2>Calculator</h2></div>
+            <input class="input" onkeydown="
+            if(event.key==='Enter'){
+                    calculateValue();
+            }">
+            <div class="sub-container">
+                <button class="button1-btn-c" onclick="clearValue()">C</button>
+                <button class="button1-btn-modulo" onclick="appendValue('%')">%</button>
+                <button class="button1-btn-divide" onclick="appendValue('/')">/</button>
+                <button class="button1-btn-back" onclick="deleteValue()"><</button>
+            
+            
+                 <button class="button2-btn" onclick="appendValue('7')">7</button>
+                <button class="button2-btn" onclick="appendValue('8')">8</button>
+                <button class="button2-btn" onclick="appendValue('9')">9</button>
+                <button class="button2-btn-multi" onclick="appendValue('*')">x</button>
+            
+            
+                <button class="button2-btn" onclick="appendValue('4')">4</button>
+                <button class="button2-btn" onclick="appendValue('5')">5</button>
+                <button class="button2-btn" onclick="appendValue('6')">6</button>
+                <button class="button2-btn-minus" onclick="appendValue('-')">-</button>
+            
+            
+                <button class="button2-btn" onclick="appendValue('1')">1</button>
+                <button class="button2-btn" onclick="appendValue('2')">2</button>
+                <button class="button2-btn" onclick="appendValue('3')">3</button>
+                <button class="button2-btn-plus" onclick="appendValue('+')">+</button>
+           
+                <button class="button2-btn" onclick="appendValue('0')">0</button>
+                <button class="button2-btn" onclick="appendValue('.')">.</button>
+                <a href="https://photos.google.com/photo/AF1QipPGRWt28NnKIX3QlbjtG1bgr3FnxuOVVgSqp6h2" class="button2-btn-img"><img src="vamsi.png" alt=""></a>
+                <button class="button1-btn-equal" onclick="calculateValue()">=</button>
+                
+
+            </div>
+        </div>
+        
+        <script src="calculator.js">
+            
+        </script>
+    </body>
+</html>
